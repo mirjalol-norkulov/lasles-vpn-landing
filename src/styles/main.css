@@ -85,7 +85,7 @@
 }
 
 .customer-card {
-  @apply p-4 border-2 border-solid border-primary rounded-xl;
+  @apply p-4 border-2 border-solid border-primary rounded-xl h-full;
 
   &__avatar {
     @apply w-12 h-12 mr-2 rounded-full;

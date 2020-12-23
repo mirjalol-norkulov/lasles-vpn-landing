@@ -3,7 +3,7 @@
 }
 
 .swiper-slide {
-  @apply p-2;
+  @apply p-2 h-auto;
 }
 
 .swiper-pagination {

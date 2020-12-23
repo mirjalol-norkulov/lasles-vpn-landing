@@ -1,0 +1,37 @@
+.swiper-container {
+  @apply pb-24;
+}
+
+.swiper-slide {
+  @apply p-2;
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-200 opacity-100 mx-1;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-primary;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply w-12 h-12 rounded-full border-2 border-solid border-primary text-primary mx-2 transition-colors duration-300;
+  position: static;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+
+  &::after {
+    content: "";
+  }
+
+  &:hover {
+    @apply text-white bg-primary;
+  }
+}

@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white;
+  font-family: "Rubik", sans-serif;
+}
+
+.main {
+  margin-top: 90px;
+}
+
+.text-h1 {
+  @apply text-4xl text-black font-bold tracking-wide;
+}
+
+.text-h2 {
+  @apply tracking-wide font-medium text-3xl;
+}
+
+.body-text {
+  @apply text-gray tracking-wide;
+}
+
+.gray-shadow {
+  box-shadow: 0px 0px 30px 25px rgba(13, 16, 37, 0.06);
+}
+
+.wrapper {
+  @apply px-4;
+
+  @screen lg {
+    @apply px-14;
+  }
+
+  @screen xl {
+    @apply px-20;
+  }
+}
+
+.address-map {
+  @apply h-64;
+}

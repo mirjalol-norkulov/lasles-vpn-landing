@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lasles VPN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="<%=require('./static/favicon.webp')%>"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <header class="header js-header">
+        <div class="container mx-auto flex wrapper">
+          <a href="/" class="flex items-center">
+            <img
+              src="<%=require('./static/logo.webp')%>"
+              class="header__logo"
+            />
+          </a>
+          <div class="hidden md:flex items-center flex-1 justify-center">
+            <a href="#about" class="header__link">About</a>
+            <a href="#features" class="header__link">Features</a>
+            <a href="#pricing" class="header__link">Pricing</a>
+            <a href="#testimonals" class="header__link">Testimonials</a>
+            <a href="#subscribe" class="header__link">Help</a>
+          </div>
+          <div class="hidden lg:flex items-center">
+            <a href="#" class="header__link"> Sign In </a>
+            <a href="#" class="btn btn--outlined btn--mini btn--rounded">
+              Sign Up
+            </a>
+          </div>
+          <div class="lg:hidden flex-1 flex justify-end">
+            <button class="header__hamburger js-hamburger">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-------------------------------------------------------------------------------------------------------->
+      <!-- Mobile nav menu -->
+      <!-------------------------------------------------------------------------------------------------------->
+      <nav class="mobile-nav js-mobile-nav">
+        <a class="mobile-nav__link" href="#about">About</a>
+        <a class="mobile-nav__link" href="#features">Features</a>
+        <a class="mobile-nav__link" href="#pricing">Pricing</a>
+        <a class="mobile-nav__link" href="#testimonals">Testimonials</a>
+        <a class="mobile-nav__link" href="#subscribe">Help</a>
+      </nav>
+      <!-------------------------------------------------------------------------------------------------------->
+
+      <main class="main">
+        <!-- Banner | About -->
+        <!-------------------------------------------------------------------------------------------------------->
+        <section class="flex justify-center" id="about">
+          <div class="w-full md:w-1/2 wrapper py-4 xl:py-24">
+            <h1 class="text-h1">Want anything to be easy with LaslesVPN.</h1>
+            <p class="pt-4 pb-10 text-gray">
+              Provide a network for all your needs with ease and fun using
+              LaslesVPN discover interesting features from us.
+            </p>
+            <a href="#" class="btn gray-shadow"> Get started </a>
+          </div>
+          <div class="hidden md:block w-1/2">
+            <img src="<%= require('./static/banner.webp')%>" />
+          </div>
+        </section>
+        <!-------------------------------------------------------------------------------------------------------->
+        <section class="wrapper mt-24">
+          <div class="flex flex-wrap justify-center my-4 py-10 gray-shadow">
+            <div class="w-1/3">
+              <div
+                class="flex flex-col md:flex-row items-center justify-center px-2 md:px-6 py-8 border-r border-solid border-gray"
+              >
+                <svg
+                  width="55"
+                  height="56"
+                  viewBox="0 0 55 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-primary"
+                >
+                  <rect
+                    y="0.0493164"
+                    width="55"
+                    height="55"
+                    rx="27.5"
+                    class="text-primary-lighter"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M27.5 26.3493C28.4548 26.3493 29.3705 25.97 30.0456 25.2949C30.7207 24.6197 31.1 23.7041 31.1 22.7493C31.1 21.7945 30.7207 20.8788 30.0456 20.2037C29.3705 19.5286 28.4548 19.1493 27.5 19.1493C26.5452 19.1493 25.6296 19.5286 24.9544 20.2037C24.2793 20.8788 23.9 21.7945 23.9 22.7493C23.9 23.7041 24.2793 24.6197 24.9544 25.2949C25.6296 25.97 26.5452 26.3493 27.5 26.3493ZM22.3987 37.1493C20.5769 37.1493 19.0422 35.6179 19.7394 33.9347C20.1616 32.9156 20.7803 31.9896 21.5603 31.2096C22.3403 30.4296 23.2663 29.8108 24.2855 29.3887C25.3046 28.9666 26.3969 28.7493 27.5 28.7493C28.6031 28.7493 29.6954 28.9666 30.7145 29.3887C31.7337 29.8108 32.6597 30.4296 33.4397 31.2096C34.2197 31.9896 34.8385 32.9156 35.2606 33.9347C35.9578 35.6179 34.4232 37.1493 32.6014 37.1493H22.3987Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="md:ml-4">
+                  <h1 class="font-bold text-xl text-black text-center">90+</h1>
+                  <p class="text-gray text-center">Users</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3">
+              <div
+                class="flex flex-col md:flex-row items-center justify-center px-2 md:px-6 py-8 border-r border-solid border-gray"
+              >
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-primary"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.0493164"
+                    width="55"
+                    height="55"
+                    rx="27.5"
+                    class="text-primary-lighter"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M35 24.5493C35 23.6301 34.8189 22.7198 34.4672 21.8705C34.1154 21.0213 33.5998 20.2496 32.9497 19.5996C32.2997 18.9496 31.5281 18.4339 30.6788 18.0822C29.8295 17.7304 28.9193 17.5493 28 17.5493C27.0807 17.5493 26.1705 17.7304 25.3212 18.0822C24.4719 18.4339 23.7003 18.9496 23.0503 19.5996C22.4002 20.2496 21.8846 21.0213 21.5328 21.8705C21.1811 22.7198 21 23.6301 21 24.5493C21 25.9363 21.41 27.2263 22.105 28.3143H22.097C24.457 32.0093 28 37.5493 28 37.5493L33.903 28.3143H33.896C34.6164 27.1907 34.9995 25.8841 35 24.5493ZM28 27.5493C27.2044 27.5493 26.4413 27.2332 25.8787 26.6706C25.3161 26.108 25 25.345 25 24.5493C25 23.7537 25.3161 22.9906 25.8787 22.428C26.4413 21.8654 27.2044 21.5493 28 21.5493C28.7956 21.5493 29.5587 21.8654 30.1213 22.428C30.6839 22.9906 31 23.7537 31 24.5493C31 25.345 30.6839 26.108 30.1213 26.6706C29.5587 27.2332 28.7956 27.5493 28 27.5493Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <div class="md:ml-4">
+                  <h1 class="font-bold text-xl text-black text-center">30+</h1>
+                  <p class="text-gray text-center">Locations</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3">
+              <div
+                class="flex flex-col md:flex-row items-center justify-center px-2 md:px-6 py-8"
+              >
+                <svg
+                  width="55"
+                  height="56"
+                  viewBox="0 0 55 56"
+                  fill="none"
+                  class="text-primary"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    y="0.0493164"
+                    width="55"
+                    height="55"
+                    rx="27.5"
+                    class="text-primary-lighter"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M35.5 18.5493H19.5C18.9696 18.5493 18.4609 18.76 18.0858 19.1351C17.7107 19.5102 17.5 20.0189 17.5 20.5493V24.5493C17.5 25.0797 17.7107 25.5885 18.0858 25.9635C18.4609 26.3386 18.9696 26.5493 19.5 26.5493H35.5C36.0304 26.5493 36.5391 26.3386 36.9142 25.9635C37.2893 25.5885 37.5 25.0797 37.5 24.5493V20.5493C37.5 20.0189 37.2893 19.5102 36.9142 19.1351C36.5391 18.76 36.0304 18.5493 35.5 18.5493ZM30.5 22.5493C30.5 23.1016 30.0523 23.5493 29.5 23.5493C28.9477 23.5493 28.5 23.1016 28.5 22.5493C28.5 21.997 28.9477 21.5493 29.5 21.5493C30.0523 21.5493 30.5 21.997 30.5 22.5493ZM34.5 22.5493C34.5 23.1016 34.0523 23.5493 33.5 23.5493C32.9477 23.5493 32.5 23.1016 32.5 22.5493C32.5 21.997 32.9477 21.5493 33.5 21.5493C34.0523 21.5493 34.5 21.997 34.5 22.5493ZM35.5 28.5493H19.5C18.9696 28.5493 18.4609 28.76 18.0858 29.1351C17.7107 29.5102 17.5 30.0189 17.5 30.5493V34.5493C17.5 35.0798 17.7107 35.5885 18.0858 35.9635C18.4609 36.3386 18.9696 36.5493 19.5 36.5493H35.5C36.0304 36.5493 36.5391 36.3386 36.9142 35.9635C37.2893 35.5885 37.5 35.0798 37.5 34.5493V30.5493C37.5 30.0189 37.2893 29.5102 36.9142 29.1351C36.5391 28.76 36.0304 28.5493 35.5 28.5493ZM30.5 32.5493C30.5 33.1016 30.0523 33.5493 29.5 33.5493C28.9477 33.5493 28.5 33.1016 28.5 32.5493C28.5 31.997 28.9477 31.5493 29.5 31.5493C30.0523 31.5493 30.5 31.997 30.5 32.5493ZM34.5 32.5493C34.5 33.1016 34.0523 33.5493 33.5 33.5493C32.9477 33.5493 32.5 33.1016 32.5 32.5493C32.5 31.997 32.9477 31.5493 33.5 31.5493C34.0523 31.5493 34.5 31.997 34.5 32.5493Z"
+                    fill="currentColor"
+                  />
+                </svg>
+
+                <div class="md:ml-4">
+                  <h1 class="font-bold text-xl text-black text-center">50+</h1>
+                  <p class="text-gray text-center">Servers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-------------------------------------------------------------------------------------------------------->
+        <!-- Features -->
+        <!-------------------------------------------------------------------------------------------------------->
+        <section
+          class="wrapper flex flex-wrap justify-center mt-24"
+          id="features"
+        >
+          <div class="w-full md:w-3/4">
+            <img src="<%= require('./static/features.webp')%>" />
+          </div>
+          <div class="w-full md:w-1/4">
+            <h2 class="text-h2 mt-4 md:mt-0">
+              We Provide Many Features You Can Use
+            </h2>
+            <p class="text-gray tracking-wide mt-4">
+              You can explore the features that we provide with fun and have
+              their own functions each feature.
+            </p>
+            <ul class="feature-list">
+              <li>Powerfull online protection.</li>
+              <li>Internet without borders.</li>
+              <li>Supercharged VPN</li>
+              <li>No specific time limits.</li>
+            </ul>
+          </div>
+        </section>
+        <!-------------------------------------------------------------------------------------------------------->
+        <!-- Plans -->
+        <!-------------------------------------------------------------------------------------------------------->
+        <section class="mt-24" id="pricing">
+          <h2 class="text-h2 text-center">Choose your plan</h2>
+          <p class="text-center body-text mt-4 mb-16">
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 col-auto gap-x-4 gap-y-4 md:gap-x-8 xl:gap-x-12 wrapper auto-rows-max justify-center content-center"
+          >
+            <div class="price-card">
+              <img
+                class="price-card__image"
+                src="<%=require('./static/price-plan.webp')%>"
+              />
+              <h3 class="price-card__title">Free plan</h3>
+              <ul class="price-card__features">
+                <li>Unlimited Bandwitch</li>
+                <li>Encrypted Connection</li>
+                <li>No traffic logs</li>
+                <li>Works on all devices</li>
+              </ul>
+              <h2 class="price-card__price">Free</h2>
+              <a href="#" class="btn btn--outlined btn--rounded btn--small">
+                Select
+              </a>
+            </div>
+            <div class="price-card">
+              <img
+                class="price-card__image"
+                src="<%=require('./static/price-plan.webp')%>"
+              />
+              <h3 class="price-card__title">Standard plan</h3>
+              <ul class="price-card__features">
+                <li>Unlimited Bandwitch</li>
+                <li>Encrypted Connection</li>
+                <li>Yes traffic logs</li>
+                <li>Works on all devices</li>
+                <li>Connect anywhere</li>
+              </ul>
+              <h2 class="price-card__price">
+                $9 / <span class="text-gray font-normal">mo</span>
+              </h2>
+              <a href="#" class="btn btn--small btn--outlined btn--rounded">
+                Select
+              </a>
+            </div>
+            <div class="price-card">
+              <img
+                class="price-card__image"
+                src="<%=require('./static/price-plan.webp')%>"
+              />
+              <h3 class="price-card__title">Premium plan</h3>
+              <ul class="price-card__features">
+                <li>Unlimited Bandwitch</li>
+                <li>Encrypted Connection</li>
+                <li>No traffic logs</li>
+                <li>Works on all devices</li>
+                <li>Connect anywhere</li>
+                <li>Get new features</li>
+              </ul>
+              <h2 class="price-card__price">
+                $12 / <span class="text-gray font-normal">mo</span>
+              </h2>
+              <a href="#" class="btn btn--rounded btn--small"> Select </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="mt-24 wrapper">
+          <h2 class="text-h2 text-center">Huge Global Network of Fast VPN</h2>
+          <p class="body-text text-center mt-4 mb-16">
+            See <strong>LaslesVPN</strong> everywhere to make it easier for you
+            when you move locations.
+          </p>
+          <img src="<%=require('./static/huge-global.webp') %>" />
+        </section>
+
+        <!----------------------------------------------------------------------------------------------------->
+        <!-- Sponsored brands -->
+        <!----------------------------------------------------------------------------------------------------->
+        <section class="mt-24 wrapper">
+          <img
+            src="<%=require('./static/sponsored.webp')%>"
+            alt="Sponsored brands"
+          />
+        </section>
+        <!----------------------------------------------------------------------------------------------------->
+        <!-- Customers | Testimonials -->
+        <!----------------------------------------------------------------------------------------------------->
+        <section class="mt-24 wrapper" id="testimonals">
+          <h2 class="text-h2 text-center">
+            Trusted by Thousands of Happy Customer
+          </h2>
+          <p class="text-center body-text">
+            These are the stories of our customers who have joined us with great
+            pleasure when using this crazy feature.
+          </p>
+          <div class="mt-8">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="customer-card">
+                    <div class="flex items-center">
+                      <img
+                        class="customer-card__avatar"
+                        src="<%=require('./static/user-avatar.jpg')%>"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <h4 class="customer-card__title">Viezh Robert</h4>
+                        <p class="customer-card__subtitle">Warsaw, Poland</p>
+                      </div>
+                      <div class="customer-card__rating">
+                        4.5 <i class="icon icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="customer-card__content">
+                      <p>
+                        “Wow... I am very happy to use this VPN, it turned out
+                        to be more than my expectations and so far there have
+                        been no problems. LaslesVPN always the best”.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="customer-card">
+                    <div class="flex items-center">
+                      <img
+                        class="customer-card__avatar"
+                        src="<%=require('./static/user-avatar.jpg')%>"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <h4 class="customer-card__title">Yessica Christy</h4>
+                        <p class="customer-card__subtitle">Shanxi, China</p>
+                      </div>
+                      <div class="customer-card__rating">
+                        4.5 <i class="icon icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="customer-card__content">
+                      <p>
+                        “I like it because I like to travel far and still can
+                        connect with high speed.”.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="customer-card">
+                    <div class="flex items-center">
+                      <img
+                        class="customer-card__avatar"
+                        src="<%=require('./static/user-avatar.jpg')%>"
+                        alt="Avatar"
+                      />
+                      <div>
+                        <h4 class="customer-card__title">Kim Young Jou</h4>
+                        <p class="customer-card__subtitle">
+                          Seoul, South Korea
+                        </p>
+                      </div>
+                      <div class="customer-card__rating">
+                        4.5 <i class="icon icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="customer-card__content">
+                      <p>
+                        “Wow... I am very happy to use this VPN, it turned out
+                        to be more than my expectations and so far there have
+                        been no problems. LaslesVPN always the best”.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-between items-center mt-8">
+                <div class="swiper-pagination"></div>
+                <div class="flex">
+                  <div class="swiper-button-prev">
+                    <i class="icon icon-arrow-left"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                    <i class="icon icon-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------------------------------------------------------------------------------------------------->
+        <!-- Subscribe -->
+        <!----------------------------------------------------------------------------------------------------->
+        <section id="subscribe">
+          <div class="wrapper transform translate-y-1/2">
+            <div
+              class="p-12 rounded-lg flex flex-wrap items-center justify-between bg-white gray-shadow"
+            >
+              <div class="w-full sm:w-6/12">
+                <h2 class="text-h2">Subscribe Now for Get Special Features!</h2>
+                <p class="body-text mt-2">
+                  Let's subscribe with us and find the fun.
+                </p>
+              </div>
+              <div class="mt-6 sm:mt-0">
+                <a href="#" class="btn">Subscribe Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!----------------------------------------------------------------------------------------------------->
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-8/12 sm:w-6/12 lg:w-4/12 px-4">
+            <img src="<%= require('./static/logo.webp')%>" />
+            <p class="body-text mt-4 mb-8">
+              LaslesVPN is a private virtual network that has unique features
+              and has high security.
+            </p>
+            <div class="flex flex-wrap">
+              <a
+                class="footer__social-btn gray-shadow"
+                href="https://www.facebook.com"
+                target="_blank"
+              >
+                <i class="icon icon-facebook"></i>
+              </a>
+              <a
+                class="footer__social-btn gray-shadow"
+                href="https://t.me"
+                target="_blank"
+              >
+                <i class="icon icon-telegram"></i>
+              </a>
+              <a
+                class="footer__social-btn gray-shadow"
+                href="https://www.instagram.com"
+                target="_blank"
+              >
+                <i class="icon icon-instagram"></i>
+              </a>
+              <a
+                class="footer__social-btn gray-shadow"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <i class="icon icon-youtube"></i>
+              </a>
+            </div>
+            <p class="body-text font-medium mt-8">©2020 LaslesVPN</p>
+          </div>
+          <div
+            class="w-4/12 sm:w-6/12 lg:w-8/12 grid gap-x-5 gap-y-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            <div>
+              <h4 class="text-lg font-medium">Product</h4>
+              <ul class="footer__list">
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Server</a></li>
+                <li><a href="#">Countries</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-medium">Engage</h4>
+              <ul class="footer__list">
+                <li><a href="#">LaslesVPN?</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms of service</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-medium">Earn money</h4>
+              <ul class="footer__list">
+                <li><a href="#">Affliate</a></li>
+                <li><a href="#">Become partner</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

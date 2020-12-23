@@ -1,0 +1,113 @@
+@import "swiper/swiper-bundle.css";
+@import "./fontello.css";
+
+@import "./global.css";
+@import "./nav.css";
+@import "./footer.css";
+@import "./swiper.css";
+
+.feature-list {
+  @apply mt-4;
+
+  li {
+    @apply text-sm text-gray pl-8 py-2;
+    background: url("../assets/check.svg") no-repeat left center;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-white font-bold rounded-md capitalize px-10 py-3 bg-primary border-solid border-primary border-2;
+
+    @screen sm {
+      @apply px-14;
+    }
+
+    &--rounded {
+      @apply rounded-3xl;
+    }
+
+    &--outlined {
+      @apply bg-white text-primary;
+    }
+
+    &--small {
+      @apply py-2;
+    }
+
+    &--mini {
+      @apply py-1 px-8;
+    }
+
+    &--circle {
+      @apply rounded-full px-3 py-3;
+    }
+  }
+}
+
+.link {
+  @apply text-primary relative;
+
+  &::after {
+    content: "";
+    @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 inline-block w-0 bg-primary transition-all duration-300;
+    height: 1.5px;
+  }
+
+  &:hover::after {
+    @apply w-full;
+  }
+}
+
+.price-card {
+  @apply px-12 py-8 flex flex-col items-center border-2 border-solid border-gray-200 rounded-xl;
+
+  &__image {
+    @apply w-auto;
+  }
+
+  &__title {
+    @apply text-lg font-medium text-center my-4 capitalize;
+  }
+
+  &__features {
+    @apply mb-24 flex-1;
+
+    li {
+      @apply text-sm text-gray pl-8 py-2 capitalize;
+      background: url("../assets/check-solid.svg") no-repeat left center;
+    }
+  }
+
+  &__price {
+    @apply font-medium text-2xl text-center mb-2;
+  }
+}
+
+.customer-card {
+  @apply p-4 border-2 border-solid border-primary rounded-xl;
+
+  &__avatar {
+    @apply w-12 h-12 mr-2 rounded-full;
+  }
+
+  &__title {
+    @apply font-medium text-lg;
+  }
+
+  &__subtitle {
+    @apply text-gray;
+  }
+
+  &__rating {
+    @apply flex-1 flex justify-end items-center;
+
+    i {
+      @apply text-primary;
+    }
+  }
+
+  &__content {
+    @apply pt-4;
+  }
+}
